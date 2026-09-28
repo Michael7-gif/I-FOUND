@@ -43,7 +43,7 @@ function Footer() {
       </div>
 
       <div className="site-footer-bottom">
-        <p>© 2026 I FOUND. All rights reserved.</p>
+        <p>© 2026 MICHAEL. All rights reserved.</p>
 
         <p>Lost & Found, made simple.</p>
       </div>
