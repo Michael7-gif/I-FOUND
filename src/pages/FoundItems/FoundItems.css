@@ -1,0 +1,480 @@
+.found-items-page {
+  background: #f6f6f3;
+  color: #111111;
+}
+
+.found-items-header {
+  min-height: 440px;
+  padding: 90px 6% 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+  background: #111111;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.found-items-header-content {
+  max-width: 720px;
+}
+
+.found-items-header-content p,
+.found-items-heading p,
+.found-items-bottom p {
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.found-items-header-content p {
+  color: #bdbdbd;
+}
+
+.found-items-header-content h1 {
+  max-width: 680px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  font-weight: 700;
+}
+
+.found-items-header-content span {
+  display: block;
+  max-width: 590px;
+  margin-top: 25px;
+  color: #cfcfcf;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.report-found-button {
+  flex-shrink: 0;
+  padding: 14px 22px;
+  background: #ffffff;
+  color: #111111;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.report-found-button:hover {
+  background: #e8e8e5;
+  transform: translateY(-2px);
+}
+
+.found-items-content {
+  width: min(1180px, 88%);
+  margin: 0 auto;
+  padding: 75px 0 90px;
+}
+
+.found-items-search {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  margin-bottom: 70px;
+}
+
+.search-field {
+  flex: 1;
+}
+
+.search-field label {
+  display: block;
+  margin-bottom: 9px;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.search-field input {
+  width: 100%;
+  height: 52px;
+  padding: 0 17px;
+  border: 1px solid #dcdcd8;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #111111;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-field input:focus {
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.06);
+}
+
+.search-button {
+  height: 52px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 5px;
+  background: #111111;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #292929;
+}
+
+.found-items-heading {
+  margin-bottom: 28px;
+}
+
+.found-items-heading p {
+  color: #777777;
+}
+
+.found-items-heading h2 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: -1.2px;
+}
+
+.found-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.found-item-card {
+  display: block;
+  overflow: hidden;
+  background: #ffffff;
+  color: #111111;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(17, 17, 17, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.found-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(17, 17, 17, 0.11);
+}
+
+.found-item-image {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  background: #eeeeeb;
+}
+
+.found-item-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.found-item-card:hover .found-item-image img {
+  transform: scale(1.04);
+}
+
+.found-item-no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e9e6;
+  color: #888888;
+  font-size: 13px;
+}
+
+.found-item-card-content {
+  padding: 22px;
+}
+
+.found-item-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.found-item-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 10px;
+  border-radius: 20px;
+  background: #e2eee6;
+  color: #24633b;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.found-item-card-content h3 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.found-item-card-content > p {
+  margin: 9px 0 5px;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.found-item-card-content > span {
+  display: block;
+  color: #888888;
+  font-size: 12px;
+}
+
+.found-item-poster {
+  margin-top: 19px;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #eeeeeb;
+}
+
+.found-item-poster-image,
+.found-item-poster-placeholder {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.found-item-poster-image {
+  display: block;
+  object-fit: cover;
+}
+
+.found-item-poster-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.found-item-poster-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.found-item-poster-info span {
+  color: #888888;
+  font-size: 11px;
+}
+
+.found-item-poster-info strong {
+  overflow: hidden;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.found-items-empty {
+  min-height: 300px;
+  padding: 50px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.empty-icon {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111111;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.found-items-empty h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.found-items-empty p {
+  max-width: 480px;
+  margin: 10px 0 20px;
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.empty-action {
+  padding: 12px 18px;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.found-items-bottom {
+  padding: 90px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: #111111;
+  color: #ffffff;
+}
+
+.found-items-bottom p {
+  color: #999999;
+}
+
+.found-items-bottom h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.browse-lost-button {
+  flex-shrink: 0;
+  padding: 14px 22px;
+  background: #ffffff;
+  color: #111111;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.browse-lost-button:hover {
+  background: #e9e9e9;
+}
+
+@media (max-width: 1000px) {
+  .found-items-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .found-items-header {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 760px) {
+  .found-items-header {
+    min-height: auto;
+    padding: 65px 6% 55px;
+    display: block;
+    background: #111111;
+  }
+
+  .found-items-header-content h1 {
+    font-size: clamp(40px, 11vw, 58px);
+    letter-spacing: -2.5px;
+  }
+
+  .found-items-header-content span {
+    font-size: 15px;
+  }
+
+  .report-found-button {
+    display: inline-block;
+    margin-top: 32px;
+  }
+
+  .found-items-content {
+    width: 88%;
+    padding: 55px 0 65px;
+  }
+
+  .found-items-search {
+    display: block;
+    margin-bottom: 55px;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .found-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .found-items-bottom {
+    padding: 65px 6%;
+    display: block;
+  }
+
+  .found-items-bottom h2 {
+    font-size: 38px;
+  }
+
+  .browse-lost-button {
+    display: inline-block;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 430px) {
+  .found-items-header {
+    padding: 55px 5% 45px;
+  }
+
+  .found-items-header-content h1 {
+    font-size: 40px;
+  }
+
+  .found-items-header-content span {
+    font-size: 14px;
+  }
+
+  .found-items-content {
+    width: 90%;
+  }
+
+  .found-items-heading h2 {
+    font-size: 29px;
+  }
+
+  .found-item-image {
+    height: 210px;
+  }
+
+  .found-item-card-content {
+    padding: 19px;
+  }
+
+  .found-items-bottom h2 {
+    font-size: 32px;
+  }
+}

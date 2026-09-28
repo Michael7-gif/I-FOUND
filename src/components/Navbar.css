@@ -1,0 +1,265 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  min-height: 72px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  color: #111111;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-links a,
+.login-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar-links a:hover,
+.login-link:hover {
+  color: #000000;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.signup-button {
+  padding: 11px 20px;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+.logout-button {
+  min-width: 92px;
+  padding: 10px 17px;
+  border: 1px solid #dddddd;
+  background: #f6f6f3;
+  color: #111111;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.logout-button:hover {
+  background: #111111;
+  border-color: #111111;
+  color: #ffffff;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    min-height: 70px;
+    padding: 0 5%;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .navbar-links a,
+  .login-link {
+    font-size: 14px;
+  }
+
+  .navbar-actions {
+    gap: 12px;
+  }
+
+  .signup-button {
+    padding: 10px 17px;
+  }
+
+  .logout-button {
+    min-width: 86px;
+    padding: 9px 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    min-height: 70px;
+    background: #111111;
+  }
+
+  .navbar-logo {
+    color: #ffffff;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+
+  .login-link {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .login-link:hover {
+    color: #cccccc;
+  }
+
+  .signup-button {
+    padding: 9px 13px;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 13px;
+  }
+
+  .signup-button:hover {
+    background: #eeeeee;
+  }
+
+  .logout-button {
+    min-width: 72px;
+    padding: 8px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 12px;
+  }
+
+  .logout-button:hover {
+    background: #dddddd;
+    border-color: #dddddd;
+    color: #111111;
+  }
+
+  .menu-button {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    width: 21px;
+    height: 2px;
+    display: block;
+    background: #ffffff;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .menu-button.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-button.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 22px 5% 28px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #111111;
+    box-sizing: border-box;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links > a {
+    padding: 16px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .navbar-links > a:hover {
+    color: #cccccc;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .navbar-logo {
+    font-size: 21px;
+  }
+
+  .navbar-actions {
+    gap: 5px;
+  }
+
+  .login-link {
+    font-size: 12px;
+  }
+
+  .signup-button {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+
+  .logout-button {
+    min-width: 65px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .menu-button {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,307 @@
+.about-page {
+  width: 100%;
+  background: #ffffff;
+  color: #111111;
+}
+
+.about-hero {
+  min-height: 620px;
+  padding: 90px 7%;
+  display: flex;
+  align-items: center;
+  background: #111111;
+  color: #ffffff;
+}
+
+.about-hero-content {
+  max-width: 900px;
+}
+
+.about-label {
+  margin: 0 0 22px;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-hero h1 {
+  margin: 0;
+  font-size: clamp(55px, 8vw, 95px);
+  line-height: 0.94;
+  letter-spacing: -5px;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: #777777;
+}
+
+.about-hero-text {
+  max-width: 620px;
+  margin: 35px 0 0;
+  color: #aaaaaa;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.about-intro {
+  padding: 120px 7%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 100px;
+  align-items: end;
+}
+
+.section-label {
+  margin: 0 0 18px;
+  color: #777777;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-intro h2,
+.about-purpose h2,
+.about-how-heading h2,
+.about-cta h2 {
+  margin: 0;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.about-intro-text {
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-intro-text p {
+  margin: 0 0 25px;
+}
+
+.about-intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-purpose {
+  padding: 110px 7%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+  background: #f6f6f3;
+}
+
+.purpose-content > p:not(.section-label) {
+  max-width: 530px;
+  margin: 35px 0 0;
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.purpose-list {
+  border-top: 1px solid #d8d8d4;
+}
+
+.purpose-item {
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 25px;
+  border-bottom: 1px solid #d8d8d4;
+}
+
+.purpose-item > span {
+  color: #999999;
+  font-size: 13px;
+}
+
+.purpose-item h3 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  letter-spacing: -0.5px;
+}
+
+.purpose-item p {
+  max-width: 500px;
+  margin: 0;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-how {
+  padding: 120px 7%;
+  background: #ffffff;
+}
+
+.about-how-heading {
+  margin-bottom: 70px;
+}
+
+.about-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-step {
+  min-height: 310px;
+  padding: 38px;
+  background: #111111;
+  color: #ffffff;
+}
+
+.about-step > span {
+  display: block;
+  margin-bottom: 80px;
+  color: #777777;
+  font-size: 13px;
+}
+
+.about-step h3 {
+  margin: 0 0 15px;
+  font-size: 28px;
+}
+
+.about-step p {
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-cta {
+  padding: 105px 7%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+  background: #f6f6f3;
+}
+
+.about-cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about-primary-button,
+.about-secondary-button {
+  min-height: 52px;
+  padding: 0 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-primary-button {
+  background: #111111;
+  color: #ffffff;
+}
+
+.about-secondary-button {
+  border: 1px solid #d8d8d8;
+  background: #ffffff;
+  color: #111111;
+}
+
+.about-primary-button:hover {
+  opacity: 0.85;
+}
+
+.about-secondary-button:hover {
+  background: #eeeeee;
+}
+
+@media (max-width: 900px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-purpose {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .about-step {
+    min-height: auto;
+  }
+
+  .about-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    min-height: 560px;
+    padding: 65px 5%;
+  }
+
+  .about-hero h1 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+
+  .about-hero-text {
+    font-size: 15px;
+  }
+
+  .about-intro {
+    padding: 80px 5%;
+  }
+
+  .about-intro h2,
+  .about-purpose h2,
+  .about-how-heading h2,
+  .about-cta h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .about-purpose {
+    padding: 80px 5%;
+  }
+
+  .about-how {
+    padding: 80px 5%;
+  }
+
+  .about-how-heading {
+    margin-bottom: 50px;
+  }
+
+  .about-step {
+    padding: 30px;
+  }
+
+  .about-step > span {
+    margin-bottom: 55px;
+  }
+
+  .about-cta {
+    padding: 75px 5%;
+  }
+
+  .about-cta-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about-primary-button,
+  .about-secondary-button {
+    width: 100%;
+  }
+}

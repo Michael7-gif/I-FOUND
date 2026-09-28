@@ -1,0 +1,15 @@
+.page {
+  min-height: calc(100vh - 72px);
+  padding: 80px 6%;
+  box-sizing: border-box;
+}
+
+.page h1 {
+  margin: 0 0 15px;
+  font-size: 48px;
+}
+
+.page p {
+  font-size: 18px;
+  color: #555;
+}
